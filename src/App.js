@@ -8,10 +8,7 @@ export default function App() {
     const cards = data.map(item => 
     <Card key = {item.id}
           imgSrc = "./nature.jpeg" 
-          rating = {item.stats.rating}
-          reviewCount = {item.stats.reviewCount}
-          title = {item.title}
-          price = {item.price}
+          item = {item}
     />)
     return(
        <div>
